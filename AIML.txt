@@ -1,0 +1,801 @@
+Data is a information in wich we cannt do anything with out data
+
+1.Deep learning
+2.Machine learning
+3.Artificial intligence
+
+Deep learning means in which it learning's data again and  again ,that means it will update that data day by data 
+
+ Machine learning means
+
+types 3
+1.supereeed --> both independent and dependent
+2.unsupered -->only features are available
+3.semisupered --> only some part is lable 
+
+to do project
+1.data collection 
+2.data understanding
+3.data visulization (graphs)
+4.data pre-processing (in the form of numbers,it does not like or take strings (removing unwanted errors or rows or columns))
+      to figure out the unwanted errors in the given data
+      converting a raw data into a proper data
+5.model building  (at this point it will start learing)
+6.moddel evaluation   (75if we want more we will again move to data pre-processing)
+7.result
+
+1,2,3,4 are data analysis 5,6,7   are ML-->DA+ML
+
+to done a project in machine learning in P
+1.NUMPY
+2.
+3.PANDA'S (file text(to exctract
+4.SKLERS
+5.
+
+
+pip install pandas
+
+3 types of business pro's:
+1.classification --> categories (yes no,pass fail,paid notpaid----)
+2.regression -->continous numbers
+3.clustering
+
+1,2 are supervised   3 is unsupervised
+           
+algorithm means to find the parameter points  from the given data which is mathemetically given 
+
+types of algorithm
+1.k nearest neighbours (it is a open source algorithm)
+ It will calculate the distance 				
+ Equalean formula i.e.,distance b/w two points
+      x1   y1 y
+1 -  1     1   t        5 to 1 sqrt (4-1)^2+(3-1)^2=sqrt(9+4)=sqrt(13)=3.5
+2  - 2    2    t        5 to 2 sqrt(4-2)^2+(3-2)^2=sqrt(5)=2.1
+3  -  2    3    f       5 to 3 sqrt(4-2)^2+(3-3)^2=sqrt(4)=2
+4  -  3    4    f       5 to 4=sqrt(4-3)^2+(3-4)^2=sqrt(2)=1.4
+5  - 4     3   t,f
+
+k=1 4 f
+k=2 43 ff  f
+k=3 432 fft f
+k=4 4321 fftt
+it is a binary classification 
+2 way class avoids 2 
+
+advatange of k is 
+open box
+any data set
+disadvatange of k is
+time complixety
+
+it is difficult to find correct value 
+the picking up of k value is neutral (trial )
+
+first random 80per for trinaing
+second 20per testing
+
+Y(test)  Y(train)
+  t                t           t
+  t                f           f
+  f                t           f
+  f                f           f
+
+If the data in the binary numbers
+p = 1 0 0 0 0 0 0 0 0  0
+q = 0 0 0 0 0 0 1 0 0 1
+
+S/(MC = (M11+M00)/(M01+M10+M11+M00) = (0+7)/(2+1+0+7) = 0.7
+J = (M11)/(M01+M10+M11) = 
+
+Hamming Distance:
+The Hamming Distance Between
+Same lenght
+Both are distance are at differnet
+1."Karolin" and "Kathrin" is 3
+2."Karolin" and "Kerstin" is 3
+3.1011101 and 1001001 is 2
+4.2173896 and 2233796 is 2
+
+Levenshtein  Distance:
+
+Searching algorithm:
+initial state
+transition state
+
+Example1:
+----------
+We have two jugs one with 3liters and other with 5 liters
+  a=3 lit      b=5lit
+    0                4        (goal state)
+iterations:  (on a)
+     0               0
+     3               0
+     0               3
+     3               3
+     1               5
+     1                0
+     0               1
+     3                1
+     0                4
+
+iterations:(on b)
+     0             0
+      0             5
+     3             2
+     0              2
+     2             0
+     2             5
+     3             4
+     0             4                    
+
+Example2:
+----------
+8 Puzzel problem:
+    1  6  7                                    box    1    2
+    2       5                                      3     4     5
+    4  3   8                                      6     7     8
+ This is initial state                   This is goal state
+
+1 iteration:
+       1   6   7
+       3        5
+       2   4    8         continue
+  
+Best-First Search:
+---------------------
+step 1: Place the starting node into the open list
+step 2: If the open list is empty, stop and return failure
+step 3:Remove the node n, fro the open list which has 
+
+
+
+
+
+
+
+A* Search algorithm:
+--------------------------
+step 1: Place the starting node in th open list
+step 2:Check if the open list empty or not, if the list is empty then return  failure
+step 3:Select th ende from the open list which has the smallest value of
+
+BFS h(n)
+A * g(n)+h(n)
+
+
+target feature--> rainfall or not
+features -->
+location
+type of location 
+climate 
+season
+previous climate situatation
+humidity
+global warming
+temperature
+pollution
+populetion
+
+target feature --> take job or not
+features -->
+salary
+near the location
+working hours
+type of job
+development
+profit company
+required facilities 
+benifites
+
+nodes --> indepenent feature
+leaves --> target features
+stems --> decision  (ues or no)
+ 
+How to construct a tree:
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

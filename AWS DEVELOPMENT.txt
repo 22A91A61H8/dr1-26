@@ -1,0 +1,1268 @@
+OS definition
+
+gui - graphical interface
+cli - command line interface (security purpose) (cmd)
+
+source code which was developed by  developers
+it is a closed source os ex: windows
+it is a paid 
+UNIX - it is a server used to install in mac os, apple IOS 
+developers use power shell mostly many commands in it
+
+Open source: Acess to modify the source code
+ it is a free of cost
+ Ex: GitHub repotiories , Linux 
+Community support (sharing of ideas)
+Android -  Linux
+
+
+OS components  (on windows)
+ -Shell -- gui,cli or power shell
+ -Kernel -- hardware - source code sits at kernel where source code is heart of the kernel 
+ 
+Layers:
+Application software 
+os - shell , kernel 
+hardware
+
+HARDWARE :  
+ motherboard - CPU & ram, storage, network
+     these are the resources
+Moblie operating system 
+ -android , applie ios, tyzen, java os
+General purpose  -- desktop / laptop os- ms windows, Linux, macos
+Server os -- windows server, RHEL, UBUNTU Server, UNIX
+Security OS -- Kali Linux, Parrot linux, SANS 
+Network OS -- Cisco  IOS, F% OS, Fortinet, Juniper Junos
+
+Types
+LINUX Versions -- home redhat fedora, ubuntu desktop 
+                                 server versions -- ubuntu server, rhel  (we used in cloud)
+Microsoft  -- win 10,11
+                         server versions --  server 2016, server 2022, server 2023
+
+Linux system
+     -- respderry pi - iot   
+
+Scalibility
+availability
+relialibity
+
+Servers and Clients
+
+Virtulization - to addreses the challenges  of the servers of large or small servers
+ It works on physical desktop rack servers , but we didnt use it now. 
+It is a full resources of service
+
+PowerEdge R740 Rack Server 
+ 
+one physical machine will host the multiple virtual machines   
+cloud servers on virtual machine hosted in physical machine
+
+in physical machine there is no reliablitity, scalability,avaliability   - but there is flexibility
+
+
+all operating system comes from UNIX
+it was first os 
+Linux OS 
+----------
+developed by "Linus torwalds"
+open source 
+it will have a community to discuss the occur issues
+they are different Linux os 
+Linux is everywhere 
+AWS plate-form developed by Linux
+Good security
+  
+1.clear
+2.sudo su then we get #(root account) and $(standard user account) - root to standard user account use (EXIT)
+3.# ls(list)-- we can see the files and directories
+4.# pwd(print working directorie) (/home/padma here home is the directory and padma is sub directory)
+5. # cat > file1 --To create a file to save content in the file we use an command  (crtl+Z)
+6. # cat file1 -- to see the content of the file.
+7. # cat >> file1 -- to add the some content into the file .   after that ctrl+z.
+8.# ls -l ---- It gives the details of the files for example when it is created which time, how many characters in the file etc
+9. # ls -la --- to see the all the hidden directories in the file.
+10. # mkdir dir1 to add or create a directory.
+11. To change the directory (dir1) command is # cd dir1.
+12. # cat > 123 -- It is used to create file name 123 is a file name.
+13. # cd .. -- it is used to step down to the pervious directory.
+14. # cd ec2-user/dir1 -- if we rember the path we can directly add the directory
+15.# rm -r dir1-- It is used to delete the directory .
+16.# mkdir dir1--- To create a directory.
+17.# rm -rf dir1 -- It is used to delete the file forcely.
+18.# man ls--- manaual vizuvalization.
+19.# touch file1- create an empty file. or to change the time stamp of the file.
+20.# cp file1 file2 -- the content in the file1 is copied in file2.
+30.# mv file2 file22-- to move file from one file to another file.
+40.# uname -r----to contact with the kernel. we can see the version of the kernel.
+41.# yum update --- to update 
+42.# vim thub--- we can create a file or existing file
+42. presss i to inseret mode.
+43.using esc we acan go the read only (esc : wq)to save the content(vim)
+44. : q!(vim)--- without saving the content
+45.vimtutor ---- shorcuts are available
+46.# nano thub --- to create the file
+47.ctrl o - to save ctrl+x to exit.(nano)
+clear -> to clear
+cat > file1 -> to create
+ls -ls -> to see the files
+rm -r dir1 -> to remove the directory rm means to asks to delete or not that file
+rm -rf dir1 (file name) -> to delete the file conformly
+pwd -> where we are
+cd .. -> to go back
+-mkdir 
+--mkdir dir 
+--cd dir1
+--pwd
+man ls -> manual visualization
+
+
+
+
+
+
+
+
+1-July
+AWS VPC - Virtual Private Cloud 
+                            Private network
+                            Deploy resources and get connected
+Main process is connecting to network
+Internet blackout - disconnect network
+Virtual Private Cloud <- creates further network connected
+Virtual Private Cloud - comes under network services
+
+About the network
+-------------------------
+Network means communication
+To connect network connection their follow some protocols(rules). Their are different protocols for different applications like ip add,security etc
+
+(In networking)
+IP address
+Address
+-----------
+MAC address
+IPv4 address * (v - version)
+IPv6 address 
+
+IP address will get only when it is connected to network
+
+Main adapters
+------------------
+Bluetooth device
+Wireless adapter
+Cable network (GbE Family controller) <- PCIe is their we have connect lan port 
+
+If we connect to different networks the ip address will change according to it
+command
+------------
+ifconfig - ip addr show
+  dual sim - 200
+IANA - Internet Assigned Numbers Authority
+   It will handle and assign IP address to everyone like SIMS eg:jio,airtel 
+   IPv4 address - 4+ million  (are using)
+   IPv6 address   works in background
+    In background ipv4 connect to ipv6 
+getmac - it will give mac address (mac - media acess control)
+    it is a physical address
+ipconfig /all - it will give complete information about interface
+ping google.com - ping command sends request to the computer to the google to communicate
+     it will check the connection b/w ping point and destination 
+     it will check connected or not
+     the ping command will works with only ipv4 add
+tracert www.aec.edu.in - trace root <- is used to trace the route taken by packets from your PC to a target IP address
+
+Lanch ec2 insta - lin/windows
+public ip add - ping from your laptop
+ping - icmp - internet control messaging protocol 
+     it is a service protocol
+
+IPv4 address
+--------------
+It is a interface. Every interface should have a different ip address i.e.,unique
+Ip add <- 10.16.57.128 - 4 parts
+              octate - 4 parts
+              8 bits.8 bites.8 bites.8 bites -32 bites
+              IPv4 - 32bit binary system
+  octate - 0 to 255
+  1       1       1         1       1        1        1         1
+  7       6       5         4       3       2         1         0
+  2^7   2^6   2^5    2^4    2^3   2^2      2^1     2^0
+128+64+32+16+8+4+2+1=255
+0-255.0-255.0-255.0-255
+4,29,24,67,296 - ipv4 addresses
+IANA designed like this
+ipv4 - 5 classes
+A  1 - 127		B  128 - 191	c 192 -  223 	D 224 - 239	E  240-255
+Network - multiple connections of devices
+Their are "router" to communicate to another network  (intra net)
+Van <- it is globally connected 
+Wired network
+intra network <- local network
+global network
+
+To write network ip addresses
+"A class" - N.H.H.H   (1.0.0.0) no ip add should not start with 0
+Last ip in A class - 127.255.255.255
+N <- network  H <- host
+Continously changing - host
+Not changing - network 
+Ex: Bill Gates - 101,102,103,104,.......        Network- Bill gates   host room- no's
+  1.0.0.0  (N.H.H.H)
+  1.0.0.0-255   <- 1.0.0.255
+  1.0.1.0-255   <-1.0.1.255
+  1.0.2.0-255    <-1.0.2.255
+  1.0.3.0-255   <-1.0.3.255
+  1.0.255.255
+  1.1.0.0          <-1.1.
+
+2-july
+-------------------------------------------
+   1. Series
+pc0 - 257t ip add - 1.0.1.0
+pc1 - 259 th ip add - 1.0.1.2
+    2.Series
+pc2 - 100th ip  - 2.0.0.99
+pc3 - 200th ip - 2.0.0.199
+
+pc0 & pc2 will not 
+---------------------------------------------
+
+"B class" <- 128 - 191 N.N.H.H
+First ip <- 128.0.0.0
+Last ip <- 191.191.255.255
+Last ip B class <- 191.255.255.255
+128.0.0.1 - 128.0.255.255
+128.1.0.0 - 128.2.  - 128.3.  - 123.4.   -128.255  
+129.0.
+N.N.H.H
+host/network
+128.0.0.0. - 128.0.255.255
+65536  /128.0 network
+------------------------------------------------------
+pc0 128.1.255.254   pc1 128.1.1.1  pc2 128.2.1.1
+pc0&pc2 no       pc1&pc0 yes       pc2&pc0 no
+pc0&pc1 yes      pc1&pc2 no        pc2&pc1 yes
+---------------------------------------------------------
+"C class" <- 192 -223 N.N.N.H
+First ip - 192.0.0.0
+Last ip in C class - 223.255.255.255
+Last network in C class - 223. 255.255
+3rd network in C class - 192.0.2.
+Last ip of 3rd network in C class 192.0.2.255
+hosts / network  - 256 hosts
+192.0.0.255
+
+--------------------------------------------------------------------------
+10th network in A class <- 10.0.0.0
+260th IP add in 10th network <- 10.0.1.3
+no.of hosts in 10th network <- (0-255=256)256*256*256 
+no.of network in A class <-127
+
+5th network in B class <- 128.4
+256th IP add in 5th network <- 128.4.0.255
+no.of hosts in 5th network <- 256*256   - 65,536
+no.of networks in B class <- 191-127  16,384 (64*256)
+
+5th network in c class <- 192.0.4.1
+257th IP address in 5th network <- not possible
+no.of host in 5th network <- 256
+no.of  networks in c class <- 32*256*256
+----------------------------------------------------------------------------
+a b c  <- 1-223 <- Unicasting 
+d  224- 239  <-  multicasting  -240-255   <-specified  method of st institutions eG:lopp,iccc,icif,iana
+A class 9,127 loopback,  always active connwciom
+
+Reserve IP Addresses
+------------------------------
+The reserve ip add causes problems because they don't give errors when it occurs .So, cloud will not work with reserver ip add
+ We  shoud  not use
+-broadcast id <- last ip of every network
+-network id <- Ex:192.168.67.0 <- first ip of every network
+This are not usable and valid ip add
+Remaining all are usable like apipa
+In every network the first id we should not use 
+The first network of first ip or last ip  of id so it doesn't take
+
+Network <- ip <- id (last id no & first id no)
+
+172.10.0.0
+overall <- 65536       valid <- -2 
+
+10.250.67.89
+last usable ip 10.255.255.254
+First usable ip 10.0.0.1
+Network id 10.0.0.0
+Broadcast id 10.255.255.255
+256th usable 10.0.1.0
+
+192.168.96.90
+nid 192.168.96.0
+bid  192.168.96.255
+192.168.96.254  254th
+
+APIPA -Automatic Private IP Addressing
+DHCP- Dynamic Host Configuration protocol  <- server <- IP service
+dhcp servers
+The administeter will give the ip add for all it is difficult to the administater to give the ip add to all instead of administater the DHCP will give ip add to all if the DHCP is not connected or not given the ip add it will send a request to the os then the os will active the apipa ,then the apipa will give the ip add to the user when they connected to the network
+
+
+
+server lo services <- DHCP <- service on <- start ip - 1.0.0.2<- subnet mask <- 255.0.0.0 <- save it
+ same server <-  desktop <- ip - 1.0.0.1 <- tab on subnet mask
+pc1 <- deskop <- ip config < on dhcp
+
+
+10.0.0.154   10.0.0.254
+
+3-July
+------------------------
+B class
+257th network  <- 129.0.0.0
+network id   <- 129.0.0.0
+broadcast id  <- 129.0.255.255
+258th usable ip  <-  129.0.1.2
+last usable ip  <- 129.0.255.254
+255th usable <-129.0.0.255
+256th <-129.1.0.256
+             129.1.1.257
+------------------------------
+128.0.0.255
+128.0.1.0
+
+
+After removing reserved ip add these ip's are usable
+These id's are given IANA
+-Private ip - RFC1918 ip add range
+     <-used by the internally, privately 
+     <-cannot connect to net 
+     <-Range 
+	    10.0.0.0  -   10.255.255.255
+            172.16.0.0  -  172.31.255.255
+	    192.168.0.0  -  192.168.255.255
+-Public ip 
+      <- used by the ISPs, internet IPs 
+      <- used or connected worldwide
+      <-Every public ip is tracked by IANA 
+      <-Net is only connected through public ip 
+      <-Remaining all public ip rather than private ip add
+  IANA <- epabx  <- users 
+  epabx is topic of tele communication
+
+
+Subnet mask/Prefix length
+--------------------------------------------
+In system the class are like:
+a class - 255.0.0.0  n.h.h.h
+b class - 255.255.0.0  n.n.h.h
+c class - 255.255.255.0  n.n.n.h 
+These are defaults in the computer
+The subnet mask tells the computer in which ip add your are
+The computer only understand subnet mask <-ip add
+It works basic on class, network
+
+Prefix length
+----
+A class <- 255.0.0.0/8  <- /  network bits (for hosts)
+B class <- 255.255.0.0/16
+C class <-255.255.255.0/24
+
+Classful IP addressing < - Default subnet mask or default prefix length
+
+Subnetting 
+--------------
+These are the useful process in the network:
+-Reduce wastage of ip address
+-increased security
+-reduced broadcast
+
+
+256 --> 30
+requirement -30
+nearest value - 2^5 - 32
+writing the new subnet mask 
+      255.255.255.0 - 256 IPs        /24
+      255.255.255.000000002
+
+      2550255.255.11110000  
+      255.255.255.224 ---new subnet mask /27
+no of host             no of networks
+
+witing the range - 2^h -32
+192.168.10.0 -  192.168.10.31
+192.168.10.32 - 192.268.10.63
+          10.64   -          10.95
+          10.96  -            10.127
+         10.128   -           10.159
+          10.160-            10.191
+            10.192  -         10.223
+             10.224    -        10.225   
+Ex: 192.168.10.32 - 192.168.10.63
+                255.255.255.254/27 
+--------------------------
+10  req
+requirement 10
+req 16 networks
+  16 hosts/net
+192.168.10.48 - 192.168.10.63
+    255.255.255.240  /28
+nearest value 16
+host 16
+writing the range 2^16 65536   
+---------------------------
+
+7-July
+------------------------------------------------------------
+req - 1000
+requirement - 1000
+1024 - hosts - 2^h
+64 network - 2^n as per host
+subnet mask - 255.255.252.0 /22
+   172.10.0.0 - 172.10.0.255 <- 256
+    				1.255 <- 256
+  				2.255 <- 256  
+  				3.255 <- 256   <-  1024
+1024 / network  -  10624
+
+172.10.0.0  -  172.10.3.255  -  1024
+172.10.4.0  - 172.10.7.255  -1024
+172.10.8.0  -  172.10.11.255  
+172.10.12.0  -  172.10.15.255
+  .........................
+up to 64 networks
+4 blocks 
+---------------------------------------------------------------
+formula for block value <-- 2^h /25
+----------------------------------------------------------------
+req - 2000
+requirement - 2000
+2048 - hosts - 2^h
+255.255.00000.000000
+255.255.111000.000000
+255.255.248.0 /21 - subnet mask
+32 - network 
+	172.67.0.0  -  172.67.7.255
+        .......................
+        32 networks 
+----------------------------------------------------------------
+
+<256  -  C class         
+256  <  65536  -  B class
+65536  -  A class
+
+-----------------------------------------------------------------
+How many subnets and hosts per subnet can you get form the network 172.22.0.0 /25?
+512subnet  sub 126 hosts
+
+How many students and host per subnet can you get from the network 192.168.190.0  255.255.255.258
+ /30  remaining 2^2  4-hosts networks-2
+64 subnets
+--------------------------------------------------------------
+
+Network in Cloud - AWS VPC <- Virtual private cloud is a network service in AWS
+For VPC create a region by default Nr.Virgine
+
+------------------------------
+create VPC with 192.168.1.0
+req 30
+take 3rd network to create subnet
+
+ping 54.167.39.76 -t
+  
+1.vpc
+2.ece
+3.internet gateway
+4.routers
+5.route <- edit route
+------------------------------
+internet gateway <- igw
+subnet <- route
+
+
+172.17.1.3 - 259
+172.17.1.253 - 509
+172.17.1.254 - 510
+
+8th July
+For server <- availability (11 9's) 24/7
+Storage services <- hard disk <- that something stores data <- durability is characteristic (11 9's) how many years time period without data lose
+Data address <- it will be their until we open
+3 types of data
+	- data at rest <- saving the data or retrieve the data
+	- data in transit <- source to destination process <- mails, websites ....
+	- data i process <- opening something it will process <- executing in background
+
+Storage devices <- floppies, cd, dvd, pen drives, tape drives,
+ 
+Storage technology
+--------------------
+                     Physical purpose
+HDD - Hard disk drive (older tech)
+	<- Permanent storage
+SSD - Solid state drive 
+	<- Permanent storage 
+
+The hard disk drive run 7200 RPM it creates magnetic field in that it will save the data
+
+SSD is a concept of "Semiconductor Technology"
+	- It is a durable more than HDD
+	- Ex: pen drives
+	- light weight and small 12b 
+	- more space
+	- fast read and write
+ - IOPS (Input Output operations per second)  means fast read and write or retrieves the data 
+        -Better in SSD  than HDD	
+	-We have to pay for fast IOPS
+	- to increase storage performance IOPS is used  
+The cloud can store in these both based on purpose
+
+Disadvantage 
+  - If the data is deleted the HDD can retrieve the data 90% but in SSD it retrive he data 20%
+In performance SSD is best than HDD
+
+Based on purpose storage is two types
+    1).Block Storage <- Internal sto <- it is fast <- available in EC2 <- OS <- Boot
+                 EBS <- Elastic block store
+    2).Object Storage <-External sto < something collecting from outside <-object 
+                 AWS S3 <- Simple storage services
+1. Block Storage:
+    - Internal Structure: Data is stored in fixed-sized blocks.
+    - Use Case: Suitable for databases, virtual machine file systems, and applications requiring low-latency access to large amounts of data.
+    - Performance: Generally offers high performance and low latency.
+    - Example Services: Amazon EBS (Elastic Block Store), Google Persistent Disks.
+2. Object Storage:
+    - Internal Structure: Data is stored as objects, each containing the data, metadata, and a unique identifier.
+    - Use Case: Ideal for storing large amounts of unstructured data such as media files, backups, and logs.
+    - Scalability: Highly scalable and typically used for big data, web content, and backup storage.
+    - Example Services: Amazon S3 (Simple Storage Service), Google Cloud Storage.
+
+DNA Storage
+
+Amazon EBS
+	-EBS used in EC2 for fast performance
+
+**************************************************************
+(lab)
+developing 
+    Sandbox <- launch instance 
+in mobaxtream app <- sessions <- ssh <- rdp <- ip <- username administrator <- connect password
+
+1 GiB, Max: 16384 GiB. The value must be an integer. imp
+
+in elastic lo volumes create volume cheyalli < size 5gb and availability zone instance lo availability zone yemi undho adhi petali create
+to add drive to ec2 check the box create volume actions lo attach volume <- instance select instance create and 2nd option xvdb attach
+then in mobaxsterm same command it will show 2nd drive create
+right click on line and it will get to online and right click on initialized ok now it is in online
+5gb midha right click next upto finish then the another drive will create
+
+diskmgmt. msc
+
+create chese na volume ni check chese actions lo create snapshot cheyalli 
+
+a volume ni detach chese and delete cheyalli
+
+snapshot lo delete chesna volume ni check actions lo create volume from snapshot cheyalli 
+
+create volume cheyalli 
+attach to ec2
+data restore
+*****************************************************************
+
+9th July
+Snapshot <- is used to backup data
+	<- It backup all the volumes (snapshot)
+Data base server is connected to application
+	static server <- stack application <- we don't change the website frequently
+application <- database server (which stores credentials)
+In general it is  2TR general web application
+
+Object Storage (S3)
+----------------
+- These server is available in AWS S3
+	SSS<- Simple c storage service 
+- Unlimited storage 
+- To store data we upload a file is called <- Inward connections to cloud
+- Outward connections are charged
+          Ex: incoming data are free from s3 but when download something it was chargeable
+	- S3 - storage tiers
+	- S3 standard <- 99.99 availability
+			       <- 11 9s of durability (storing of data without data lose)
+	                       <- daily storage needs
+	- S3 IA(infrequent access)  <- little bit charges 
+	- S3 one zone - IA
+	- S3 Glacier <- less expensive (ones in a year) 
+			    <- Access is not much fast 
+			    <- 2hrs to get data from S3 
+			    <- Apollo use these case  
+	- S3 Glacier Deep Archive <- deep Storage 
+						 <- 5hrs to rise request to download the data 
+						 <- charge 5 paise  
+	- S3 Snow family  <- migrating service <- data sending to the services
+                1. S3 snowball  <- is a device <- terabyte to petabyte 
+		2. S3 snowmobile  <- pb to eb
+-Data is stored as objects in buckets
+-Virtually unlimited <- single objects is limited to 5 TB
+-EBS internal storage 
+*********************************************
+To create a bucket
+--------------------------
+In developing
+search s3
+left mean buckets <- create bucket <- name <- remove check mark at block all public <- check at I acknowledge big box <- create bucket
+go to the bucket create open it click on upload <- add file <- last upload (the file is upload successful)
+
+10th July
+after upload we can download this file
+go to the bucket <- Objects pakana properties lo ki <- next permissions lo Block public access should be off ledha on lo unte edi button remove the check mark block all public acess and save setting
+Now come backet policy  leave
+object ownership <- Acls disabled recommended no Acls enabled check on big box <- save
+Access control list <- edit <- Everyone public access list and read check it <- check big box <- save
+Go to the objects check it go to actions make public using acl 
+click on the object in properties the object url will be their <- copy the URL open in new window
+file <- object
+****************************************************
+(lab)
+To deploy
+-----------------
+Next create another bucket <- in objects set permissions as above
+upload object <- select zip file in that drag and drop the zip files <- after successful comple <- select all the objects and <-  make public option <- to get public access
+go to properties <- go to last option Static website hosting <- edit <- enable <- index doc name (index.html) same name <- save
+after save in that same swh their will URL Bucket website URL 
+
+after some changes in html file without delete add the html file in it and amke public
+select the file <- go to versions 
+So, go to the bucket <- select and open bucket <- properties in that version <- edit <- enable <- save 
+*********************************************
+Change index file 
+upload c
+Bucket Versioning  <- Keep track of object changes
+
+11th July
+ACL <- Access control list
+------------------------------
+   - allow
+   - deny
+AWS starts with root account <- it holds full details
+ 	- every company will have one account overall
+
+2nd level Administrator account
+	AWS <- root <- mfa (multi factor account) which have opts , pass, etc.
+    *Storage administrator <- can protect roots and create buckets , but cannot touch ec2 instance
+    *Cloud administrator <- related on compute things <- related to ec2 instance  
+    *IAM administrator <- (Identity access manager admini ) <- give the access to users like login and logout 
+
+API Call 
+-----------
+Enter cloud works on API call , internal applications are communicating with API Call
+
+AWS Management console
+------------------------------
+Server <- Linux
+		    develop <- Linux
+			deployments
+
+AWS can access in 3 ways
+	*AWS Management console
+	*AWS CLI (command line interface)
+	*AWS SDK <- softer development kits <- combination in a developed languages which is pre-existing 
+
+-AWS SDK  for python <- boto3 (to access resources)
+-Cloud shell is a predefined  pre-authenticated prebuilt bash  authenticated <- bash
+Cloud - ssh inbuilt bash
+-Cloud9 - AWS ide <- Integrated development environment
+	-write , debug, test
+	-AWS cloud9 is used to install sdk to access the bucket
+
+Files
+---------
+.py
+.json (javascript object notation)
+.xml (xtensive markup language)
+
+--$ user used
+**********************************
+developing course <- lab 2.1
+
+AWS CLI
+In console home <- search bar besides 
+
+Commands
+-------
+aws --version <- to see present or installled version
+aws s3 ls <- A list of the S3 buckets that exist in the account
+**********************************
+
+12th July
+***********************************
+developing course <- lab 3.1
+*Install AWS SDK in cloud9 IDE
+*Use wget comm to download lab files in cloud9 IDE
+*unzip the lab files
+*create s3 bucket from cloud9 using AWS CLI
+*change ACL settings of bucket to control access
+*create JSON file with bucket policy in cloud9
+*apply bucket policy to bucket using AWS SDK in cloud9
+*copy websites objects to bucket
+*
+
+Commands
+-------------------
+sudo pip install boto3
+wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-200-ACCDEV-2-91558/02-lab-s3/code.zip -P /home/ec2-user/environment
+unzip code.zip
+aws --version
+
+************************************
+
+15th July
+
+You started your shift and there is an unusually high volume of customer contacts. You take your first case: A customer opens critical priority case reporting a slow server where overall service performance is heavily degraded. Specifically, it has gone from full to half speed. You learn that due to their severely degraded service, their customers are having difficulty accessing their online services. You are currently in a chat session with the customer. Please note that at amazon, servers are referred to as "EC2 instance"
+---------------------
+Topics
+---------------
+iam role 
+MFA 
+----------------------
+
+AWS Data bases
+------------------
+ Servers 
+    -email
+Data base server is not a individual server it should be connected to some server
+Database server should be connected to application server (1st client). The application server have or access public ip 
+Application server -- Database server
+public ip - app --> private ip --> db server
+Client - Server
+	Ex: Gmail - ec2  ---> database - ec2
+
+AWS Databases --> Managed Services i.e., managed by AWS 
+   -2 types
+	1). Relational DB Services
+	2). Non-Relational DB Services
+
+ec2 - database - unmanaged service (customer)
+  tables 
+  DB Software (sql, NoSQL)
+	- MySQL, amazon aurora, Microsoft sql server, postgre sql, maria DB, oracle
+  OS - customer
+  hardware - AWS
+
+1).AWS RDS (relational database service)
+    ----------
+	- It is completely managed by AWS service
+	- Managed -> scaling, fault tolerance, backup etc..
+	- Data security
+	- It supports database software services
+	- It hosts only RDS services
+	- Services : AWS RDS, Amazon Aurora given by amazon
+	- Other name : SQL services 
+	- Data storage : rows and columns
+	- Schemas : fixed
+	- Queringing : uses sql
+	- Scalability : vertical (increase in processing power i.e., size of system 4gb, 8gb,16gb)
+	- Use cases : Web and mobile (high avalibility), ecommerce app (low-cast DB, data security), mobile & gaming 
+ private subset - amazon rds 
+ public subnet - amazon ec2
+
+***************************************************************************************
+Amazon RDS creation and Connecting to MySQL Workbench and Connecting to MySQL in Mobxtrem      (lab)
+---------------------------------------------------------------------------------------------------------
+In developing 
+	- search RDS - managed RDS -> left side "databases" click it -> now, click on "create databases" -> choose "standard create" -> next select "MySQL" -> in  templete choose  "free tier"  -> in DB-instance identifier  name "any name" -> credentials any name default "admin" -> in master password @ not support "give password" -> in compute resources if the application is ec2 instance go to connect to ec2 in now select "don't connect ec2 instance" -> in public access "yes"  -> (*Port no "3306" to communicate with database, port no*) -> click on database    
+	admin  <- pass Gayathri123
+
+16th july
+`create rds with free tier
+`launch ec2 instance with ubuntu
+	-create ec2 instance with ubuntu "select ubuntu" <- in app select ssh same process in                         server name "ubuntu" name 
+        -after creation in app update the ubuntu packages -> commd "sudo apt update"
+`install MySQL-client
+	in app <- cmmd "apt-get install mysql-client" 
+
+After completion above process
+	open rds -> endpoint link (by the public link we can access the ec2 instance or other services through internet) copy the link in the  -> after install MySQL in app -> go to the rds instance -> click on database in rds side click on actions select "set connection to ec2 instance" <- this commd  in app "mysql -h <endpoint link> -u <username> (admin) -p" 
+         in rds -> go to security -> select default one -> it will open in ec2 -> go to edit bounders -> select "add rules" -> two all traffic 4 all 1 custom 2 anywhere ipv4 top select default -> select "save changes"   
+
+ // 
+     MySQL>SHOW DATABSES
+     MySQL>CREATE DATABASE <DBNAME>;
+     MySQL>SHOW DATABASES (in mob app)
+//
+
+Open MySQL bench workstation
+	left MySQL connections click on + sign -> set connection name "any name" -> host name "endpoint link of rds" -> username "admin" -> password click on store in vault pass admin pass click on ok -> select "test connections" -> again reload it will get connect 
+****************************************************************************************************
+18th July
+
+2).AWS Non-relational
+    ----------------------
+	- Managed multiple database
+	- the application is faster
+	- application --> database
+	- Services :
+	- Other name : Non SQL services
+	- Data storage: key value, graph
+	- Schemes: Dynamic
+	- Querying: focuses on collection of documents 
+	- Scalability: horizontal scaling (increase in no.of machines i.e., adding multiple computers due to scalability)
+	-  Amazon DynamoDB and MongoDB is a non-relational DB 
+	- Saving the data:
+		DynamoDB -> Table -> items -> ids 
+                        (using cloud9)
+
+  Non RDS is best way then RDS 
+
+************************************************************
+In Developing 
+	Lab 5.1 -> Working with DynamoDB
+************************************************************
+
+29th  July
+
+API & AWS API Gateway Development 
+-----------------------------------
+These is totally about development like links,codes 
+Postman API -> is a platform to works with API 
+``Fundamental of API  and API gateways    ``
+- API - Application Program Interface
+ 	-> It is used to talk to one application to other application  (one is website server and other database server)
+		Eg :  customer -> waiter(API) ->chef
+                         customer <- waiter(API) <- chef
+- API means something accessing from database
+- request and response 
+	request  -  get request  (to get some website)
+			 put request -database - username (login) (to save)
+ 			 post request (creating any dashboard)
+	response
+	status codes - xxx (about the error msg or codes)  status code - 200 (means success code)
+		There are some status codes  (API status codes)       
+   These are three main components of API
+user -> website -> API gateway
+-API gateway supported protocols
+	- Restful 
+		-Short-lived communication
+	- WebSocket's
+		- Long-lived Communication
+		- It is a bidirectional (two-way communication)
+*****************************************************************
+API LAB (only basic api can create)  (lab 6.1)
+
+Sandbox -> api gate service search -> go to rest api -> create name -> api endpoint "regional" -> create
+*****************************************************************
+1st AUG
+
+Lambda :
+----------
+	-> It is a serverless service (server means which gives the service to the client) i.e., it have server but it is managed by the aws data centers it is non-chargeable where the        ec2 instance not created automatically
+		`aws beanstalk -> serverless -> platform service -> ec2 instance server is managed
+		` aws cloud9
+	->It is used in automation, scripts -> (starting)trigger particular task 
+	-> Built-in fault tolerance
+	-> Pay-per-use pricing
+	->*script/code - lambda function
+	->*trigger - when to execute
+  s3 bucket - image - lambda --> copy s3 bucker
+                  image  (copy)          another s3 bucker
+	`new object came into the bucket then function activated (lambda)
+	->*IAM role - permission to resource (imp) 
+  function - code - stop ec2 instance
+  trigger - 1 min
+  iam role - give the function lambda to stop ec2 instance
+****************************************************************
+Activity lambda
+6 lab
+****************************************************************
+
+6th August
+
+on-premise -> virtual/ec2 - aws
+cloud -- container
+
+Containers --> a transformed concept of application deployment
+
+Containers
+------------
+this two are physical server
+on-premises  -  
+	user
+	application - web server
+	operating system
+	hardware
+
+	user
+	application - email server
+	operating system
+	hardware
+
+to deploy this in virtual devlop we to have
+	
+	virtual deplo-
+		  EC2                   EC2
+		  VM                     VM
+		user
+		application     APPLICATION
+		OS- EMAIL     OS-WEB
+		hypervisor- VIRTUALIZATION
+		hardware - DATACENTER
+
+Cloud - is a self service 
+
+Containers
+this is conainer deplo
+one virtual machine for three servers (which means cost free and one server ec2(one))
+these three application works on only one ec2 service
+application is a part of the container
+
+	container				container				container
+	application-mail		application-web		appli-db
+	OS
+	hypervisor
+	hardware
+
+Container contains one lightweight OS - alpine Linux
+`layers of container
+	container
+	OS (virtual machine(one))
+	hardware
+Alpine Linux
+------------------
+special designed for the containers
+Layers
+	application -web, db, email
+	binaries / libraries - (environment)(these two are different for different application)
+	OS - lightweight os - alpine Linux
+
+ec2 - 10s and 100s container
+
+DOCKER HUB - It provides containers
+other containers -> containerd  
+
+container - small in size the "developers" will develop the "container" ->  the "container" is send to "administrator" -> and the "administrator" deployed the "container" 
+
+container image - alpine, lib/bin, appli (it is not running)
+container - it is running environment of image 
+******************************************
+PROCESS                                                                                 
+To deploy he container (In developing
+launch instance -> ssh connection -> apt-get update -> apt-get install docker.io -> docker --version ( to see version) -> to see the running container "docker ps" -> to see running images "docker images" -> "docker pull httpd" to download the layers in one single images(OS)  -> "docker run httpd" to run the container image -> "docker stop container id" to stop container -> but the download image will available -> "docker ps -a" to see stopped containers -> "docker rm <container>" to delete the container -> "docker rmi <image" to delete the image (if we want to delete these both after they both get stopped)
+
+`continuation
+
+8th August
+
+docker run -d -p80:80 --name <anyname> <imagename>
+
+docker run -d -p8080:80 --name <anyname1> <imagename>
+
+docker.hub.io
+
+website ni deploy chesaka container lo repository chestam taruvata means we deploy the image into the repository
+
+we have to create docker hub login 
+
+application
+http
+-----
+-----
+alpine           image   push   -> docker repository
+
+application (container) running as reflected as website now we push into the repository
+
+``command
+docker login -> to login   (we have enter passwd and user  (docker hub login))
+docker commit gracious_agensi(<container name> or <container id>) shaifyy/my-app:1.0 (version 1.0 optional)  -> to commit (shaifyy (repository name), my-app (name) , 
+	docker commit gracious_agensi shaifyy/my-app
+doker images -> docker image, and repository name
+docker ps ->
+docker stop <container id>
+docker images
+docker rmi http
+
+docker stop <containername> -> to stop
+docker container prune ->
+docker rmi httpd
+
+docker run -d -p80:80 shaiffy/myapp 
+
+``to push it into the repository
+docker login
+docker push shaifyy/my-app
+docker stop container (to remve already running)
+docker rmi shaifyy/my-app
+docker pull shaifyy/my-app
+docker run -d -p:8080:80 shaiffy/my-app
+
+images --> available in docker hub
+httpd/MySQL/redis               pull this image locally
+--lib/bin
+imags contains alpine Linux
+
+after pull 
+run --> container
+copying the --> application
+
+image
+    application            push-> docker hub
+    httpd
+    lib/bin
+    alpine
+
+image -> image -> docker hub -> admin/operation team
+
+packages are --> build
+windows have -> exe file 
+Linux -> pkg, apt, yum, jar (these are packages)
+mac -> dpkg
+	these packages are build and send to operating team then ops -> will deployment into the servers 
+        deploy - ec2 - website 
+	error then the code is send to deployment team(fsd) 
+
+deplo  which means -> opearation team 
+	if errors occur
+        testers - dev - code
+	security - vulnerabilities
+
+
+************************************************************************
+lab 8.2 Containers
+
+3 Virtual man
+1. cloud9 - vm
+2.1 vm - appli
+3. 1 vm - database -MySQL
+	last two will be in cloud9 
+  here we use ECR- Elastic COntainer Registry - AWS service (instead of docker hub)
+
+docker build -> will see the docker file  
+*************************************************************************
+
+IN DOCKER
+
+launch instance -> ssh connection -> apt-get update -> apt-get install docker.io -> docker --version ( to see version) -> to see the running container "docker ps" -> to see running images "docker images" 
+to see network "docker network ls"
+to create network "docker network create mongo-network" 
+to pull the mongo -> "docker pull mongo"
+enable 27017 port to ec2 in security group
+to run mongo-> docker run -d -p 27017:27017 --name mongo --net mongo-network -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=pass mongo
+	`-d  (run in detached mood (in background))
+	`27017:27017
+          ec2      container    (coming to  ec2 forward the connection  to the container) 
+	`-e -> environment variables
+		the output will some long number (a hash value)
+to see running container -> docker ps
+to see where it is listening the image -> docker logs <hash value>
+browse the publicipofec2:27017   (ip address of ec2)   
+
+to run mongo-express -> docker run -d -p 8081:8081 --name mongo-express --net mongo-network -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=pass -e ME_CONFIG_MONGODB_SERVER=mongo mongo-express (to authenticate to the mongo server)  
+browse the publicipofec2:8081   (ip address of ec2)   
+
+docker stop <container>
+docker rm <container>
+           
+(Mongo - it is a non-relational database)
+
+
+******************************************************************************
+
+13th Aug
+
+Load Balancer  
+--------------------
+Load balancer --> controls traffic --> user load 
+	To balance the deploy application that are connected 
+Ex: 
+	5000 user --> ec2(application)
+	5000 user --> lb --> ec2 (app)
+				     ec2(app)
+		- due to lb include some user to ec2 and some other to another ec2 
+		- here round robin scenario will be gone on
+load balancer --> target group
+
+ec2 -> instance launch "name, ubuntu, create key pair,
+add rules "http, 2 nd lo 0..
+vpc last lo
+
+#!/bin/bash
+sudo su
+apt-get update -y
+apt-get install apache2 -y
+systemctl start apache2
+
+cd /var/www 
+rm index.html
+vim index.html
+systemctl start apache2
+
+after creating 2 ec2 inst 
+	left "load balancer" -> open it -> create lb -> go for application load -> name "my-lb" -> scheme "keep same option (internet facing)" (these a re internet connected)   ->  Addresses type "ipv4" -> Vpc default or select create vpc -> Availability zones  "1a & 1b" (select two at a time) -> Security group "go to create ec2 and select security id (launch-wizers 1 & 2 " (select two at a time)" -> "http" port "80" next at target group "create target group -> "select instances -> target groupname "tg-01" -> next vastai register target check two instances -> down "include at pending" select   -> create target group" after refresh at health status "it should be "healthy""
+	
+again come to load balancer -> the select create tg -> create load balancer  -> status "provisioning" -> DNS name link is imp if we DNS link is search the server1 & server 2 when we refresh the link it will switch
+
+
+
+
+-----------------------------
+Port Numbers:
+-----------------
+Remote:
+	RDP -3389 (used in windows)
+	SSH - 22 (used in Linux and Unix)
+	TELNET- 23 (unsecured)
+Non-Remote:	
+	SFTP - 22(use for securely transferring files over a network)
+	ETP - 21 (older protocol used for transferring file b/w client ad server. It is not secured)
+	HTTP- 80 (used for transferring web pages related content b/w web server and also to client)
+	HTTPS - 443 (It is a secure communication on web, especially sensitive data)
+
+20,21  -  File transfer Protocol
+22  -  Secure Shell
+23  Telnet Protocol
+25  -  Simple Mail transfer Protocol
+53  -  Domain Name System
+67,68  -  Dynamic Name System
+110  -  Post office Protocol (POPs)
+137  -  Net BTOS name service
+143  -  Internet message access protocol (IMAP4)
+27017 - Mongo
+8081 - Mongo-express
+
+
+-
+22nd Aug
+
+**Internet is a "Untrusted Network"
+
+
+Firewall --> it filters the network traffic due to it have n no.of firewalls
+2 types (Prevention or Dictions System) 
+	1. IPS -> Recommended one
+	2. IDS
+
+IDS
+-----
+Techniques it have
+	file, ip, header database
+
+Networks  
+	1. Internal network -> database server -> these are isolated 
+	2. Public Network -> webserver, email server
+
+-
+23rd AUG
+
+Infront of load balancer the web application 
+
+WAF - Web Application firewall
+	Types of attacks that control wef
+		1. SQL injection
+		2. XSS- cross site scripting
+		3. DOC -denial of service
+		4. DDOC - distributed doc
+
+SQL Injection
+---------------
+That attacks the database which have not correct logic code
+``haveibeenpwned.com (website)
+
+XSS- cross site scripting
+-----------------------------
+Different patterns which are not protected
+
+DOC
+------
+ping reply is dangerous that takes the users  
+
+DDOC 
+--------
+multiple traffics are send at a time to down the server
+
+The traffic are connected to load balancer
+
+--------------------------------------------------------------
+After creating load balancer with eb page
+
+search for "web application firewall" (WAF)  ->  left ip sets -> create ip sets -> name " " -> region  same ipv4 same  ip address white page "enter ip address that are connected to wi-fi /32) -> create  -> side main page lo "create ip" -> choose  "Regional resources" "Amazon cloudfront distribution" (mainly used for web app which are globally)  -> associate resource " load balancer" -> add -> next -> rules "add my own ule" select "ip set" that your created -> IP addresses to use  -> source -> block -> add rule ->  Default web ALC "block" -> next -> next -> next -> create web alc
+
+
+4thSep
+--------
+By this Service "the settings or some terms or services are automatically created when the lab was started"
+AWS Cloudformtion -> infra as a code
+In the same the 3rd party is works "Terraform"
+
+
+Automation -> Aws lambda
+AWS lambda - serverless 
+	- to automate the code
+
+AWS Step function -> 2022 
+	- It is called as "Orchestration and flow lambda"
+	- It is an extension version of lambda
+
+6th AUG
+-----------------------------
+NAT GATEWAY:
+------------------
+from outside we cannot connect the network "by using NAT Gateway we connect"
+	in    out    allow
+	out  in 	not allow 
+
+19th Sep
+-------------
+amazon cognite- it is  authentication service (means genuine user)  
+ cloud lo - deploy one application
+ authorization -- user, passwd   -> application we can work 
+
+`  authentication   (all)                       root -- all      standandard  -- limited  
+    authorization   (limited)
+
+-------------------------------------------------
+  Amazon cognito -> create user pool -> 1st option -> email -> "no mfa" select -> next -> attributes "name"  -> next -> email "2nd option" -> next -> pool name "test-cognito-pool " -> hosted authentication "select" (select when their is no application) -> cognito domain "link if we have application or website to login" (optional) give the link has https://test-cong-pool -> app client name " " -> allw callback url "we don't have any application give localhost"" -> next -> create
+ 	
+	To authenticate into any of the my application I am creating authentication page using Amazon cognito 
+
+https://<your domain>/oauth2/authorize?response_type=code&client_id=<your app client id>&redirect_uri=<your callback url>
+
+
+
+16th Oct
+-----------
+DEVOPS -> Development operations.
+SRE -> Software Reable engi or Platform Eng (who are devops engineer)
+
+Version Control System
+----------------------------
+` It is used in Windows S3 to keep the file (the file will not permanently deleted)
+	GIT
+            Remote git  Platforms -  GIT HUB & GIT LAB (we can access the code or we can pull the code from any where)
+	    Local - BitBucket, SVN (only locally)
+- VCS are mostly used by the "developers"  some times "testers"
+- GitHub, GitLab -> is also used to create ci/cd pipelines 
+- Repository -> Something like project files (where the code is sitting there)
+- Directory -> ropy -> copy in all team members laptop (the center repo copy will be there to every one)
+- readme --> directory --> repository (the readme is developed by the snr developer and it given the jr to work on it locally)
+- Git client - git bash (it is a Linux which have hand full of commands) - git repos
+- repository --> local setup --> authentication ssh auth setup 
+
+ssh command to create key -> google
+copy -> "git clone"
+cd DR-26 -> to move to the create repository
+ls -l -> to see files in direct
+ls- la -> to see hidden files in directory
+vim <filename> -> to write in the file locally
+git add <filename > -> to add (staging area)
+git commit -m "this is read file" read1 -> to change the matter in file (committing stage)
+
+ 
+
+
+
+
+
+
+
+
+
+
+
